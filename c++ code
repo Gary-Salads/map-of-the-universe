@@ -1,0 +1,58 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string questions[5] = {
+        "How does it feel to work in service to people in need?",
+        "How does it feel when people tell you what to do?",
+        "How does your job or volunteering make you feel?",
+        "If you succeeded with all your ambitions, how would you feel?",
+    };
+
+    int ratings[4]; // To store ratings for each question
+    const int numQuestions = 4;
+
+    for (int i = 0; i < numQuestions; ++i) {
+        cout << questions[i] << endl;
+        cout << "Please rate your feelings. Enter 'good' or 'bad': ";
+        string feeling;
+        cin >> feeling;
+
+        if (feeling == "good") {
+            cout << "Rate from 0 (neutral) to 5 (very good): ";
+            int rating;
+            cin >> rating;
+            while (rating < 0 || rating > 5) {
+                cout << "Invalid input. Please rate from 0 to 5: ";
+                cin >> rating;
+            }
+            ratings[i] = rating;
+        } else if (feeling == "bad") {
+            cout << "Rate from -5 (very bad) to 0 (neutral): ";
+            int rating;
+            cin >> rating;
+            while (rating < -5 || rating > 0) {
+                cout << "Invalid input. Please rate from -5 to 0: ";
+                cin >> rating;
+            }
+            ratings[i] = rating;
+        } else {
+            cout << "Invalid feeling type. Please restart the program." << std::endl;
+            return 1; // Exit the program
+        }
+    }
+
+    // Calculate the additional ratings as requested
+    int loveRating = ratings[0] + ratings[1];               // Question 1 + Question 2
+    int qualityMentorRating = ratings[1] + ratings[2];     // Question 2 + Question 3
+    int moneyCareerValue = ratings[2] + ratings[3];         // Question 3 + Question 4
+    int lightWorkerValue = ratings[3] + ratings[0];               //Question 4 + Question 1
+
+
+    // Display calculated ratings
+    cout << "Love Rating: " << loveRating << endl;
+    cout << "Quality Mentor Rating: " << qualityMentorRating << endl;
+    cout << "Money/Career Rating: " << moneyCareerValue << endl;
+    cout << "Light Worker Rating: " << lightWorkerValue << endl;
+    return 0;
+}
