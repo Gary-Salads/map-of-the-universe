@@ -3,10 +3,10 @@
 using namespace std;
 int main() {
     string questions[5] = {
-        "How does it feel to work in service to people in need?",
-        "How does it feel when people tell you what to do?",
+       "How does it feel to help and service people in need?",
+        "How does it feel when people tell you what to do and how to live all day?",
         "How does your job or volunteering make you feel?",
-        "If you succeeded with all your ambitions, how would you feel?",
+        "If you succeeded with all your ambitions and dreams, how would you feel?",
     };
 
     int ratings[4]; // To store ratings for each question
