@@ -1,9 +1,46 @@
-﻿// Map-of-the-uni.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <string>
 using namespace std;
+int loveRating;
+int qualityMentorRating;
+int moneyCareerValue;
+int lightWorkerValue;
+static void explainLove() {
+    if (loveRating == 10 || loveRating == 9) {
+        cout << "love very good" << endl;
+    }
+    else if (loveRating == 8 || loveRating == 7) {
+        cout << "love pretty good" << endl;
+    }
+    else if (loveRating == 6 || loveRating == 5) {
+        cout << "love good" << endl;
+    }
+    else if (loveRating == 4 || loveRating == 3) {
+        cout << "love" << endl;
+    }
+    else if (loveRating == 2 || loveRating == 1) {
+        cout << "things are a brewing" << endl;
+    }
+    else if (loveRating == 0) {
+        cout << "neutral" << endl;
+    }
+    else if (loveRating == -1 || loveRating == -2) {
+        cout << " " << endl;
+    }
+    else if (loveRating == -3 || loveRating == -4) {
+        cout << " " << endl;
+    }
+    else if (loveRating == -5 || loveRating == -6) {
+        cout << " " << endl;
+    }
+    else if (loveRating == -7 || loveRating == -8) {
+        cout << " " << endl;
+    }
+    else if (loveRating == -9 || loveRating == -10) {
+        cout << " " << endl;
+    }
+}
+
 int main() {
     string questions[5] = {
        "How does it feel to help and service people in need?",
@@ -17,47 +54,27 @@ int main() {
 
     for (int i = 0; i < numQuestions; ++i) {
         cout << questions[i] << endl;
-        cout << "Please rate your feelings. Enter 'good' or 'bad': ";
-        string feeling;
-        cin >> feeling;
+        cout << "Please rate your feeling from very bad -5 to very good 5. 0 is neutral" << endl;
+        int rating; 
+        cin >> rating;
+        ratings[i] = rating;
 
-        if (feeling == "good") {
-            cout << "Rate from 0 (neutral) to 5 (very good): ";
-            int rating;
-            cin >> rating;
-            while (rating < 0 || rating > 5) {
-                cout << "Invalid input. Please rate from 0 to 5: ";
-                cin >> rating;
-            }
-            ratings[i] = rating;
-        }
-        else if (feeling == "bad") {
-            cout << "Rate from -5 (very bad) to 0 (neutral): ";
-            int rating;
-            cin >> rating;
-            while (rating < -5 || rating > 0) {
-                cout << "Invalid input. Please rate from -5 to 0: ";
-                cin >> rating;
-            }
-            ratings[i] = rating;
-        }
-        else {
-            cout << "Invalid feeling type. Please restart the program." << std::endl;
-            return 1; // Exit the program
-        }
     }
 
     // Calculate the additional ratings as requested
-    int loveRating = ratings[0] + ratings[1];                // Question 1 + Question 2
-    int qualityMentorRating = ratings[1] + ratings[2];       // Question 2 + Question 3
-    int moneyCareerValue = ratings[2] + ratings[3];          // Question 3 + Question 4
-    int lightWorkerValue = ratings[3] + ratings[0];          //Question 4 + Question 1
-
-
+    // have to change these ratings to public variables 
+     loveRating = ratings[0] + ratings[1];                // Question 1 + Question 2
+     qualityMentorRating = ratings[1] + ratings[2];       // Question 2 + Question 3
+     moneyCareerValue = ratings[2] + ratings[3];          // Question 3 + Question 4
+     lightWorkerValue = ratings[3] + ratings[0];          //Question 4 + Question 1
+    
+   
     // Display calculated ratings
     cout << "Love Rating: " << loveRating << endl;
+    explainLove();
     cout << "Quality Mentor Rating: " << qualityMentorRating << endl;
     cout << "Money/Career Rating: " << moneyCareerValue << endl;
     cout << "Light Worker Rating: " << lightWorkerValue << endl;
     return 0;
 }
+
