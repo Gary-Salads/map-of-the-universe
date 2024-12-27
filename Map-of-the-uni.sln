@@ -40,6 +40,113 @@ static void explainLove() {
         cout << " " << endl;
     }
 }
+static void explainMentor() {
+    if (qualityMentorRating == 10 || qualityMentorRating == 9) {
+        cout << "mentor very good" << endl;
+    }
+    else if (qualityMentorRating == 8 || qualityMentorRating == 7) {
+        cout << "mentor pretty good" << endl;
+    }
+    else if (qualityMentorRating == 6 || qualityMentorRating == 5) {
+        cout << "mentor good" << endl;
+    }
+    else if (qualityMentorRating == 4 || qualityMentorRating == 3) {
+        cout << "mentor" << endl;
+    }
+    else if (qualityMentorRating == 2 || qualityMentorRating == 1) {
+        cout << "things are a brewing" << endl;
+    }
+    else if (qualityMentorRating == 0) {
+        cout << "neutral" << endl;
+    }
+    else if (qualityMentorRating == -1 || qualityMentorRating == -2) {
+        cout << " " << endl;
+    }
+    else if (qualityMentorRating == -3 || qualityMentorRating == -4) {
+        cout << " " << endl;
+    }
+    else if (qualityMentorRating == -5 || qualityMentorRating == -6) {
+        cout << " " << endl;
+    }
+    else if (qualityMentorRating == -7 || qualityMentorRating == -8) {
+        cout << " " << endl;
+    }
+    else if (qualityMentorRating == -9 || qualityMentorRating == -10) {
+        cout << " " << endl;
+    }
+}
+static void explainMoney() {
+    if (moneyCareerValue == 10 || moneyCareerValue == 9) {
+        cout << "love very good" << endl;
+    }
+    else if (moneyCareerValue == 8 || moneyCareerValue == 7) {
+        cout << "love pretty good" << endl;
+    }
+    else if (moneyCareerValue == 6 || moneyCareerValue == 5) {
+        cout << "love good" << endl;
+    }
+    else if (moneyCareerValue == 4 || moneyCareerValue == 3) {
+        cout << "love" << endl;
+    }
+    else if (moneyCareerValue == 2 || moneyCareerValue == 1) {
+        cout << "things are a brewing" << endl;
+    }
+    else if (moneyCareerValue == 0) {
+        cout << "neutral" << endl;
+    }
+    else if (moneyCareerValue == -1 || moneyCareerValue == -2) {
+        cout << " " << endl;
+    }
+    else if (moneyCareerValue == -3 || moneyCareerValue == -4) {
+        cout << " " << endl;
+    }
+    else if (moneyCareerValue == -5 || moneyCareerValue == -6) {
+        cout << " " << endl;
+    }
+    else if (moneyCareerValue == -7 || moneyCareerValue == -8) {
+        cout << " " << endl;
+    }
+    else if (moneyCareerValue == -9 || moneyCareerValue == -10) {
+        cout << " " << endl;
+    }
+}
+static void explainLightWorker() {
+    if (lightWorkerValue == 10 || lightWorkerValue == 9) {
+        cout << "love very good" << endl;
+    }
+    else if (lightWorkerValue == 8 || lightWorkerValue == 7) {
+        cout << "love pretty good" << endl;
+    }
+    else if (lightWorkerValue == 6 || lightWorkerValue == 5) {
+        cout << "love good" << endl;
+    }
+    else if (lightWorkerValue == 4 || lightWorkerValue == 3) {
+        cout << "love" << endl;
+    }
+    else if (lightWorkerValue == 2 || lightWorkerValue == 1) {
+        cout << "things are a brewing" << endl;
+    }
+    else if (lightWorkerValue == 0) {
+        cout << "neutral" << endl;
+    }
+    else if (lightWorkerValue == -1 || lightWorkerValue == -2) {
+        cout << " " << endl;
+    }
+    else if (lightWorkerValue == -3 || lightWorkerValue == -4) {
+        cout << " " << endl;
+    }
+    else if (lightWorkerValue == -5 || lightWorkerValue == -6) {
+        cout << " " << endl;
+    }
+    else if (lightWorkerValue == -7 || lightWorkerValue == -8) {
+        cout << " " << endl;
+    }
+    else if (lightWorkerValue == -9 || lightWorkerValue == -10) {
+        cout << " " << endl;
+    }
+}
+// money/career func
+// light worker func
 
 int main() {
     string questions[5] = {
@@ -73,8 +180,10 @@ int main() {
     cout << "Love Rating: " << loveRating << endl;
     explainLove();
     cout << "Quality Mentor Rating: " << qualityMentorRating << endl;
+    explainMentor();
     cout << "Money/Career Rating: " << moneyCareerValue << endl;
+    explainMoney();
     cout << "Light Worker Rating: " << lightWorkerValue << endl;
+    explainLightWorker();
     return 0;
 }
-
