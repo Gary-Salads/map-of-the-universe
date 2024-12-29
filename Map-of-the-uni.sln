@@ -1,152 +1,152 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 int loveRating;
 int qualityMentorRating;
 int moneyCareerValue;
 int lightWorkerValue;
+
 static void explainLove() {
     if (loveRating == 10 || loveRating == 9) {
-        cout << "love very good" << endl;
+        cout << "You are the ultimate power couple and perfect match." << endl;
     }
     else if (loveRating == 8 || loveRating == 7) {
-        cout << "love pretty good" << endl;
+        cout << "You compliment each other well, work, and go good together." << endl;
     }
     else if (loveRating == 6 || loveRating == 5) {
-        cout << "love good" << endl;
+        cout << "You guys bring balance and harmony to each others weaknesses." << endl;
     }
     else if (loveRating == 4 || loveRating == 3) {
-        cout << "love" << endl;
+        cout << "You are loyal and committed to each other. " << endl;
     }
     else if (loveRating == 2 || loveRating == 1) {
-        cout << "things are a brewing" << endl;
+        cout << "You have a great understanding and mutual respect for each other. " << endl;
     }
     else if (loveRating == 0) {
-        cout << "neutral" << endl;
+        cout << "You settled for someone natural. Not crazy about them." << endl;
     }
     else if (loveRating == -1 || loveRating == -2) {
-        cout << " " << endl;
+        cout << "Run! Do not stay here. " << endl;
     }
     else if (loveRating == -3 || loveRating == -4) {
-        cout << " " << endl;
+        cout << "You are sad & stressed. " << endl;
     }
     else if (loveRating == -5 || loveRating == -6) {
-        cout << " " << endl;
+        cout << "You are in a toxic relationship full of games. Walking on eggshells. " << endl;
     }
     else if (loveRating == -7 || loveRating == -8) {
-        cout << " " << endl;
+        cout << "You are depressed and looking elsewhere to cheat. " << endl;
     }
     else if (loveRating == -9 || loveRating == -10) {
-        cout << " " << endl;
+        cout << "You have given up on finding true happiness and love. " << endl;
     }
 }
 static void explainMentor() {
     if (qualityMentorRating == 10 || qualityMentorRating == 9) {
-        cout << "mentor very good" << endl;
+        cout << "You are amongst Gods/creators on a high level." << endl;
     }
     else if (qualityMentorRating == 8 || qualityMentorRating == 7) {
-        cout << "mentor pretty good" << endl;
+        cout << "The cohort you are in is great." << endl;
     }
     else if (qualityMentorRating == 6 || qualityMentorRating == 5) {
-        cout << "mentor good" << endl;
+        cout << "You have good friends." << endl;
     }
     else if (qualityMentorRating == 4 || qualityMentorRating == 3) {
-        cout << "mentor" << endl;
+        cout << "You have loyal friends." << endl;
     }
     else if (qualityMentorRating == 2 || qualityMentorRating == 1) {
-        cout << "things are a brewing" << endl;
+        cout << "You have some steady friends." << endl;
     }
     else if (qualityMentorRating == 0) {
-        cout << "neutral" << endl;
+        cout << "Your social life is not important. You have no desire, drive, and/or time to focus on a social life." << endl;
     }
     else if (qualityMentorRating == -1 || qualityMentorRating == -2) {
-        cout << " " << endl;
+        cout << "Your circle of friends sucks. Get new friends. " << endl;
     }
     else if (qualityMentorRating == -3 || qualityMentorRating == -4) {
-        cout << " " << endl;
+        cout << "You are stressed and drained in a world of negativity & depression. " << endl;
     }
     else if (qualityMentorRating == -5 || qualityMentorRating == -6) {
-        cout << " " << endl;
+        cout << "You have an unresolved past and grudges. " << endl;
     }
     else if (qualityMentorRating == -7 || qualityMentorRating == -8) {
-        cout << " " << endl;
+        cout << "There are a lot of hidden issues. " << endl;
     }
     else if (qualityMentorRating == -9 || qualityMentorRating == -10) {
-        cout << " " << endl;
+        cout << "There is a lot of supressed trauma. " << endl;
     }
 }
 static void explainMoney() {
     if (moneyCareerValue == 10 || moneyCareerValue == 9) {
-        cout << "love very good" << endl;
+        cout << "Your job is perfect & epic. You are changing the world." << endl;
     }
     else if (moneyCareerValue == 8 || moneyCareerValue == 7) {
-        cout << "love pretty good" << endl;
+        cout << "Your Job is very rewarding & you love coming into work." << endl;
     }
     else if (moneyCareerValue == 6 || moneyCareerValue == 5) {
-        cout << "love good" << endl;
+        cout << "You love your job." << endl;
     }
     else if (moneyCareerValue == 4 || moneyCareerValue == 3) {
-        cout << "love" << endl;
+        cout << "You like your job. The enviroment & work place is good. " << endl;
     }
     else if (moneyCareerValue == 2 || moneyCareerValue == 1) {
-        cout << "things are a brewing" << endl;
+        cout << "Your job is stress free, balanced, and minimal micromanaging." << endl;
     }
     else if (moneyCareerValue == 0) {
-        cout << "neutral" << endl;
+        cout << "You are playing it safe. Your job does not matter to you. " << endl;
     }
     else if (moneyCareerValue == -1 || moneyCareerValue == -2) {
-        cout << " " << endl;
+        cout << "You hate your job & going to work. Find another job. " << endl;
     }
     else if (moneyCareerValue == -3 || moneyCareerValue == -4) {
-        cout << " " << endl;
+        cout << "Your job is stressful & depressing. " << endl;
     }
     else if (moneyCareerValue == -5 || moneyCareerValue == -6) {
-        cout << " " << endl;
+        cout << "You dont belong there. Work life really sucks. " << endl;
     }
     else if (moneyCareerValue == -7 || moneyCareerValue == -8) {
-        cout << " " << endl;
+        cout << "You are growing grey hair, depressed and feeling hopeless. " << endl;
     }
     else if (moneyCareerValue == -9 || moneyCareerValue == -10) {
-        cout << " " << endl;
+        cout << "YOU ARE GOING TO DIE! DANGER!!! " << endl;
     }
 }
 static void explainLightWorker() {
     if (lightWorkerValue == 10 || lightWorkerValue == 9) {
-        cout << "love very good" << endl;
+        cout << "You are living your best life, you found your tribe of change makers." << endl;
     }
     else if (lightWorkerValue == 8 || lightWorkerValue == 7) {
-        cout << "love pretty good" << endl;
+        cout << "You are among true leaders." << endl;
     }
     else if (lightWorkerValue == 6 || lightWorkerValue == 5) {
-        cout << "love good" << endl;
+        cout << "You are in the presence of greatness." << endl;
     }
     else if (lightWorkerValue == 4 || lightWorkerValue == 3) {
-        cout << "love" << endl;
+        cout << "You are in good company." << endl;
     }
     else if (lightWorkerValue == 2 || lightWorkerValue == 1) {
-        cout << "things are a brewing" << endl;
+        cout << "God sends angels." << endl;
     }
     else if (lightWorkerValue == 0) {
-        cout << "neutral" << endl;
+        cout << "You can do way better. Seek and you shall find." << endl;
     }
     else if (lightWorkerValue == -1 || lightWorkerValue == -2) {
-        cout << " " << endl;
+        cout << "Run! You are in the wrong crowd. " << endl;
     }
     else if (lightWorkerValue == -3 || lightWorkerValue == -4) {
-        cout << " " << endl;
+        cout << "These people make you sick. " << endl;
     }
     else if (lightWorkerValue == -5 || lightWorkerValue == -6) {
-        cout << " " << endl;
+        cout << "You are in danger! People are toxic to your mental health. " << endl;
     }
     else if (lightWorkerValue == -7 || lightWorkerValue == -8) {
-        cout << " " << endl;
+        cout << "Get out! Run! You should not associate with anyone,organization and/or place.  " << endl;
     }
     else if (lightWorkerValue == -9 || lightWorkerValue == -10) {
-        cout << " " << endl;
+        cout << "You are among the devil and evil people, aka Demons. " << endl;
     }
 }
-// money/career func
-// light worker func
 
 int main() {
     string questions[5] = {
@@ -177,12 +177,20 @@ int main() {
     
    
     // Display calculated ratings
+    cout << " " << endl;
+    cout << "Your love rating describes where you are in your love life, is your current partner a good fit?" << endl;
     cout << "Love Rating: " << loveRating << endl;
     explainLove();
+    cout << " " << endl; // this spaces out the texts and makes the end product look more presentable 
+    cout << "Your quality mentor rating describes how your social life is. " << endl;
     cout << "Quality Mentor Rating: " << qualityMentorRating << endl;
     explainMentor();
+    cout << " " << endl;
+    cout << "Your money/career rating describes if you care about money, is money everything?" << endl;
     cout << "Money/Career Rating: " << moneyCareerValue << endl;
     explainMoney();
+    cout << " " << endl;
+    cout << "You are a cosmic being with purpose, destiny and ability to uplift humanity. This is not your 1st time on earth." << endl;
     cout << "Light Worker Rating: " << lightWorkerValue << endl;
     explainLightWorker();
     return 0;
