@@ -177,7 +177,7 @@ int main() {
     
    
     // Display calculated ratings
-    cout << " " << endl;
+    system("cls"); //clears the console. makes the final product look cleaner
     cout << "Your love rating describes where you are in your love life, is your current partner a good fit?" << endl;
     cout << "Love Rating: " << loveRating << endl;
     explainLove();
